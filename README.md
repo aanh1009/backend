@@ -22,7 +22,7 @@ Lightweight Node/Express back‑end that turns receipt photos into structured **
 
 ```mermaid
 flowchart LR
-    FE[Frontend (TBD)] -- "POST /extract-text" --> API[Express API]
+    FE -- "POST /extract-text" --> API[Express API]
     API -- "image" --> OCR[Tesseract.js]
     API -- "save items" --> DB[(MongoDB Atlas)]
     FE -- "GET /..." --> API
